@@ -1,0 +1,173 @@
+/* CSS Document */
+@font-face {
+font-family: "dancing-script";
+src: url(../fonts/DancingScript-Regular.ttf) format("truetype");
+}
+
+body{
+	display: flex;
+color: white;
+background-color: black;
+justify-content: center;
+overflow-x: hidden;
+	font-family: "dancing-script";
+	
+}
+
+.off{
+	text-decoration: none;
+}
+
+.contenedor{
+	width: 900px;
+}
+header{
+	background-color: #5b7989;
+	width: 100%;
+	color:white;
+	text-align: left;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+header>nav>h1 {
+text-shadow: 2px 2px #02010a;
+display: inline-flex;
+padding-left: 5%;
+padding-right: 30%;
+}
+header>nav>a {
+padding-left: 4%;
+color: white;
+}
+
+.imagencentral{
+	background-color: #82c3a6;
+	width: 100%;
+	height: 640px auto;
+	text-align: center;
+}
+.ic{
+	width: 90%;
+	margin: 30px auto;
+
+}
+
+
+.imagensecundaria{
+	width: 100%;
+	border: 1px;
+	background-color: #d5c75f;
+	text-align: center
+}
+
+.paisaje{
+	width: 40%;
+	margin: 35px;
+	border:2px;
+-webkit-box-shadow: 4px 7px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 5px 0px rgba(0,0,0,0.75);
+	
+}
+.paisaje:hover{
+	transform: rotate(10deg);
+	
+}
+.retrato{
+	width: 40%;
+	margin: 35px;		
+}
+.retrato:hover{
+		transform: translate(20px, 5px);
+
+	-webkit-box-shadow: 4px 7px 5px 0px #82c3a6;
+-moz-box-shadow: 4px 7px 5px 0px #82c3a6;
+box-shadow: 4px 7px 5px 0px #82c3a6;
+}
+
+footer{
+display:flex;
+color: black;
+border-radius: 0 0 10px 10px;
+background: #C6d5c5;
+		flex-direction: row;
+	text-align: center;
+
+}
+
+.col-1, .col-2, .col-3, .col-4{
+	margin: auto;
+	float: left;	
+}
+
+div.cc>div {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0;
+}
+
+div.cc>div>div {
+margin: 20px;
+}
+
+div.cc>div>div>img {
+width: 100%;
+}
+.blur{
+	-webkit-filter: blur(10px);
+	filter: blur(10px)
+}
+.cc{
+background-color: #d5c75f;
+}
+.gris{
+-webkit-filter:  grayscale(100%);
+	filter:  grayscale(100%)	
+}
+.sepia
+{
+	-webkit-filter:  sepia(100%);
+	filter: sepia(90%)
+}
+
+@media (max-width: 900px)
+{
+	.contenedor{
+		width: 100%;
+		height: auto;
+	}
+	div.cc>div>div{
+		margin: 2px;
+	}
+	div.cc>div>div>img {
+width: 100%;
+}
+	div.cc>div {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 0;
+		flex-direction: column;
+}
+	
+	header>nav {
+text-align: center;
+padding-bottom: 4%;
+}
+header>nav>h1 {
+padding-left: 0;
+padding-right: 0;
+}
+	footer{
+		flex-direction: column;
+	}
+	
+	div.imagensecundaria>a>img{
+		width: 80%;
+		margin:20px auto;
+	}
+	
+	
+}
